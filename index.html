@@ -24,42 +24,71 @@ main{width:min(1180px,92vw);margin:38px auto 70px}.section{margin:48px 0}.sectio
 </head>
 <body>
 <header class="hero"><div class="hero-inner">
-  <div class="eyebrow">Final Master Itinerary</div>
-  <h1>東北冬季之旅<br>16–24 Jan 2027</h1>
+  <div class="eyebrow">16-24 Jan 2027</div>
+  <h1>日本東北 冬季之旅</h1>
   <p>仙台 → 乳頭溫泉 → 青森 → 奧入瀨 → 八戶 → 仙台｜3人｜9日8夜</p>
-  <div class="hero-stats"><span class="pill">✈️ UO890 / UO891</span><span class="pill">♨️ 乳頭 2晚</span><span class="pill">❄️ 奧入瀨 2晚</span><span class="pill">🚄 JR逐程買（不買Pass）</span></div>
+  <div class="hero-stats"><span class="pill">✈️ UO890 / UO891</span><span class="pill">♨️ 乳頭 2晚</span><span class="pill">❄️ 奧入瀨 2晚</span></div>
 </div></header>
-<nav class="nav"><div class="nav-inner"><a href="#todo">出發前 To‑do</a><a href="#itinerary">每日行程</a><a href="#cost">費用</a><span class="spacer"></span><button class="btn" onclick="window.print()">列印 / PDF</button><button class="btn" onclick="resetChecklist()">重設 Checklist</button></div></nav>
+<nav class="nav"><div class="nav-inner"><a href="#todo">出發前準備</a><a href="#itinerary">每日行程</a><a href="#cost">費用</a><span class="spacer"></span></div></nav>
 <main>
-<section class="section" id="todo"><div class="section-title"><div><h2>出發前 To‑do list</h2><p>Checkbox 會儲存在你呢個 browser（refresh 後仍會保留）。</p></div></div>
+<section class="section" id="todo"><div class="section-title"><div><h2>出發前 To‑do list</h2></div></div>
 <div class="todo-grid" id="todoGrid">
-<label class="todo done-default"><input type="checkbox" data-key="flight" checked><div><div class="meta">已完成</div><strong>機票 UO890 / UO891 已購買</strong><span class="badge">DONE</span><div>16/1 HKG→SDJ；24/1 SDJ→HKG</div></div></label>
-<label class="todo done-default"><input type="checkbox" data-key="nyuto" checked><div><div class="meta">已完成</div><strong>休暇村乳頭溫泉鄉已訂</strong><span class="badge">DONE</span><div>17/1–19/1｜2晚</div></div></label>
-<label class="todo done-default"><input type="checkbox" data-key="oiraseHotel" checked><div><div class="meta">已完成</div><strong>奧入瀨溪流酒店已訂</strong><span class="badge">DONE</span><div>21/1–23/1｜2晚</div></div></label>
-<label class="todo done-default"><input type="checkbox" data-key="shuttle" checked><div><div class="meta">已完成</div><strong>星野 Shuttle 已預約</strong><span class="badge">DONE</span><div>21/1 青森15:00→酒店｜23/1 酒店11:00→八戶</div></div></label>
-<label class="todo done-default"><input type="checkbox" data-key="oiraseTour" checked><div><div class="meta">已完成</div><strong>奧入瀨＋十和田湖冬季之旅已預約</strong><span class="badge">DONE</span><div>22/1｜10:00–12:00</div></div></label>
-<label class="todo"><input type="checkbox" data-key="jr17"><div><div class="meta">12/17 09:00 HKT</div><strong>買 17/1 仙台→田澤湖 Komachi 指定席</strong><div>目標班次：10:32–11:59｜3個連位</div></div></label>
-<label class="todo"><input type="checkbox" data-key="jr19"><div><div class="meta">12/19 09:00 HKT</div><strong>買 19/1 田澤湖→盛岡＋盛岡→新青森</strong><div>盛岡刻意留 1.5–2hr 食 Lunch；兩段指定席分開揀。</div></div></label>
-<label class="todo"><input type="checkbox" data-key="jr23"><div><div class="meta">12/23 09:00 HKT</div><strong>買 23/1 八戶→仙台 Hayabusa</strong><div>建議揀約15:00–15:30後，預足時間去八食中心 Lunch。</div></div></label>
-<label class="todo"><input type="checkbox" data-key="ski"><div><div class="meta">1月初</div><strong>確認田澤湖滑雪場雪況＋租借設備</strong><div>確認 26–27 season 開放雪道、租借裝備及巴士冬季時間。</div></div></label>
-<label class="todo"><input type="checkbox" data-key="ugo"><div><div class="meta">出發前 1–2週</div><strong>再次確認羽後交通冬季班次</strong><div>田澤湖站↔休暇村、休暇村↔滑雪場。</div></div></label>
-<label class="todo"><input type="checkbox" data-key="restaurants"><div><div class="meta">出發前 2–4週</div><strong>確認需要預約嘅餐廳</strong><div>仙台串燒／青森 Daijun 燒肉／其他最終選定餐廳。</div></div></label>
-<label class="todo"><input type="checkbox" data-key="snow"><div><div class="meta">出發前 7–10日</div><strong>Check 天氣、積雪、奧入瀨活動 walk‑in 名額</strong><div>暖冬／大雪都可能影響活動或交通；如有臨時 workshop 位再加。</div></div></label>
+<label class="todo"><input type="checkbox" data-key="jr17"><div><div class="meta">12/17 09:00 HKT</div><strong>買車票<br>17/1 Sendai→Tazawako - 秋田新幹線Komachi</strong><span class="badge"><a href="https://www.eki-net.com/zh-CHT/jreast-train-reservation/reserve/wb/RouteSearchConditionInputByStation/Index" target="_blank">JR-EAST</a></span><div>目標班次：10:32–11:59｜3個連位</div></div></label>
+<label class="todo"><input type="checkbox" data-key="jr19"><div><div class="meta">12/19 09:00 HKT</div><strong>買車票<br>19/1 Tazawako→Morioka - 秋田新幹線Komachi<br>Morioka→Shin-Aomori - 東北新幹線Hayabusa</strong><span class="badge">JR-EAST</span><<div>盛岡留 1.5–2hr 食 Lunch；兩段指定席分開揀。再研究Tazawako → Aomori 貫通乗車券＋兩段特急券可唔可行</div></div></label>
+<label class="todo"><input type="checkbox" data-key="jr23"><div><div class="meta">12/23 09:00 HKT</div><strong>買車票<br>23/1 Hachinohe→Sendai - 東北新幹線Hayabusa</strong><span class="badge">JR-EAST</span><<div>建議揀約15:00–15:30後，預足時間去八食中心 Lunch。</div></div></label>
+<label class="todo done-default"><input type="checkbox" data-key="shuttle" checked><div><strong>預約奧入瀨來回 Shuttle Bus</strong><div>21/1 青森15:00→酒店｜23/1 酒店11:00→八戶</div></div></label>
+<label class="todo done-default"><input type="checkbox" data-key="oiraseEvent" checked><div><strong>預約奧入瀨酒店活動</strong></div></label>
+<label class="todo"><input type="checkbox" data-key="restaurants"><div><div class="meta">12月</div><strong>確認需要預約嘅餐廳</strong><div>仙台串燒／青森 Daijun 燒肉／其他最終選定餐廳。</div></div></label>
+<label class="todo"><input type="checkbox" data-key="taobao"><div><div class="meta">12月</div><strong>淘寶小道具</strong><div>例如畫畫小冊子</div></div></label>
+<label class="todo"><input type="checkbox" data-key="shenzhen"><div><div class="meta">1月</div><strong>深圳滑雪練習</strong></div></label>
+<label class="todo"><input type="checkbox" data-key="ugo"><div><div class="meta">出發前 1–2週</div><strong>確認羽後交通冬季班次</strong><div>田澤湖站↔休暇村、休暇村↔滑雪場。</div></div></label>
 </div>
 <div class="note">JR EAST PASS：按目前行程唔抵。主要長途 JR 逐程買較平，而且 5‑day Pass 覆蓋唔到三段長途。</div>
 </section>
 
-<section class="section" id="itinerary"><div class="section-title"><div><h2>每日行程</h2><p>紅色時間＝已鎖定／預約或航班時間；灰色＝暫定。</p></div></div>
-<div class="legend"><span><i class="sw" style="background:#b91c1c"></i>精確時間</span><span><i class="sw" style="background:#16a34a"></i>已預約</span><span><i class="sw" style="background:#2563eb"></i>交通</span></div>
-<div class="days">
+<section class="section" id="itinerary">
+  <div class="section-title"><div><h2>每日行程</h2><p>紅色時間＝已鎖定／預約或航班時間；灰色＝暫定。</p></div></div>
+  <div class="legend"><span><i class="sw" style="background:#b91c1c"></i>精確時間</span><span><i class="sw" style="background:#16a34a"></i>已預約</span><span><i class="sw" style="background:#2563eb"></i>交通</span></div>
+  
+  <div class="days">
 
-<article class="day"><div class="day-head"><div class="day-photo" style="background-image:url('https://assets.st-note.com/img/1739071315-9JXnoK6QTVBxMEv2epCksNlU.jpg')"><div class="day-number">DAY 1</div></div><div class="day-intro"><div class="date">16 JAN · SAT</div><h3>香港 → 仙台｜牛舌、City Walk、超市補給</h3><div class="hotel">🏨 <a href="https://www.google.com/maps/search/?api=1&query=Hotel+JAL+City+Sendai" target="_blank">仙台日航都市酒店</a></div><div class="links"><a class="chip map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Gyutan+Zenjiro+Sendai">牛舌 善治郎</a><a class="chip map" target="_blank" href="https://www.google.com/maps/search/?api=1&query=Sendai+Station">仙台站</a></div></div></div><div class="timeline">
-<div class="event"><div class="time exact">09:00–14:05</div><div class="dot"></div><div><div class="event-title">UO890 HKG → SDJ <span class="tag booked">已購票</span></div><div class="event-sub">香港快運直航</div></div></div>
-<div class="event"><div class="time">約25 min</div><div class="dot"></div><div><div class="event-title">仙台空港アクセス線 → 仙台站 <span class="tag transport">交通</span></div><div class="event-sub">目前記錄：¥2,040（3人）</div></div></div>
-<div class="event"><div class="time">Afternoon</div><div class="dot"></div><div><div class="event-title">牛舌・善治郎 <a class="inline-map" href="https://www.google.com/maps/search/?api=1&query=Gyutan+Zenjiro+Sendai" target="_blank" rel="noopener">📍 Google Maps</a> <span class="tag food">餐廳</span></div><div class="event-sub">目前記錄：HK$1,270</div></div></div>
-<div class="event"><div class="time">Late PM</div><div class="dot"></div><div><div class="event-title">City walk + supermarket hunt</div><div class="event-sub">仙台超市補給（2晚宵夜＋零食）</div></div></div>
-<div class="event"><div class="time">Late dinner</div><div class="dot"></div><div><div class="event-title">串燒 <span class="tag tbc">餐廳待定</span></div></div></div>
-</div></article>
+<article class="day">
+  <div class="day-head">
+    <div class="day-photo" style="background-image:url('https://assets.st-note.com/img/1739071315-9JXnoK6QTVBxMEv2epCksNlU.jpg')"><div class="day-number">DAY 1</div></div>
+    <div class="day-intro"><div class="date">16 JAN · SAT</div>
+      <h3>香港 → 仙台｜牛舌、City Walk、超市補給</h3>
+      <div class="hotel">🏨 <a href="https://maps.app.goo.gl/LC7bA1ByKtHfF2NV7" target="_blank">仙台日航都市酒店</a></div>
+      <div class="timeline">
+        <div class="event">
+          <div class="time exact">09:00–14:05</div>
+          <div class="dot"></div>
+          <div><div class="event-title">UO890 HKG → SDJ </div></div>
+        </div>
+        <div class="event">
+          <div class="time">車程約25分鐘</div>
+          <div class="dot"></div>
+          <div><div class="event-title">仙台空港アクセス線 → 仙台站 <span class="tag transport">交通</span></div>
+            <div class="event-sub">¥2,040（3人）</div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="time">Late PM</div>
+          <div class="dot"></div>
+          <div><div class="event-title">牛舌・善治郎<span class="tag food">餐廳</span></div>
+          </div>
+        </div>
+        <div class="event">
+          <div class="time">Night</div>
+          <div class="dot"></div>
+          <div><div class="event-title">超市補給 + Supermarket Hunt</div><div class="event-sub">乳頭2晚宵夜＋零食</div></div>
+        </div>
+        <div class="event">
+          <div class="time">宵夜</div>
+          <div class="dot"></div>
+          <div><div class="event-title">串燒 <span class="tag tbc">餐廳待定</span></div></div>
+        </div>
+      </div>
+    </article>
 
 <article class="day"><div class="day-head"><div class="day-photo" style="background-image:url('https://images.squarespace-cdn.com/content/v1/58fd82dbbf629ab224f81b68/1542857986761-VVJW4VNBASNRCTSLNHDZ/Nyuto-Onsen.jpg')"><div class="day-number">DAY 2</div></div><div class="day-intro"><div class="date">17 JAN · SUN</div><h3>仙台 → 田澤湖 → 乳頭溫泉</h3><div class="hotel">🏨 <a href="https://www.google.com/maps/search/?api=1&query=Kyukamura+Nyuto+Onsenkyo" target="_blank">休暇村乳頭溫泉鄉</a></div><div class="links"><a class="chip map" href="https://www.google.com/maps/search/?api=1&query=Tsurunoyu+Onsen" target="_blank">鶴之湯</a><a class="chip web" href="https://www.qkamura.or.jp/nyuto/free2/?p=43" target="_blank">湯巡帖資訊</a></div></div></div><div class="timeline">
 <div class="event"><div class="time">09:00前後</div><div class="dot"></div><div><div class="event-title">Breakfast｜Eggs 'n Things <a class="inline-map" href="https://www.google.com/maps/search/?api=1&query=Eggs+n+Things+Sendai" target="_blank" rel="noopener">📍 Google Maps</a> <span class="tag food">早餐</span></div><div class="event-sub">食完返仙台站搭新幹線。</div></div></div>
